@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anos",
+  "info": {
+    "singularName": "ano",
+    "pluralName": "anos",
+    "displayName": "Ano"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "data": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "projetos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::projeto.projeto",
+      "mappedBy": "ano"
+    }
+  }
+}

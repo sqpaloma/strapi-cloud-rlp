@@ -26,6 +26,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "projetos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::projeto.projeto",
+      "mappedBy": "categories"
     }
   }
 }

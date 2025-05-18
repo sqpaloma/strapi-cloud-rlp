@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "servicos",
+  "info": {
+    "singularName": "servico",
+    "pluralName": "servicos",
+    "displayName": "Serviço"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Categoria": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
